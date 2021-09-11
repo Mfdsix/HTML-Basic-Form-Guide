@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For better user experience, give them as simple as possible form</title>
+    <style>
+        .wrapper{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        .item{
+            padding: 20px;
+            width: 49%;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+        .form{
+            padding: 20px;
+        }
+        .form-group{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="item">
+            <h3>This form is ok, but worst for user experience</h3>
+            <form>
+                <div class="form-group">
+                    <label for="fullname">Fullname</label>
+                    <input name="fullname" id="fullname" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input name="email" id="email" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input name="phone" id="phone" type="number">
+                </div>
+                <div class="form-group">
+                    <label for="url">Website (not required)</label>
+                    <input name="url" id="url" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="birth_day">Birth Date (Day)</label>
+                    <select name="birth_day" id="birth_day">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="..">..</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="birth_month">Birth Date (Month)</label>
+                    <select name="birth_month" id="birth_month">
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="..">..</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="birth_year">Birth Date (Year)</label>
+                    <select name="birth_year" id="birth_year">
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="..">..</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                    </select>
+                </div>
+                <hr>
+                <div class="form-group">
+                    <label for="product">Product you wanna order</label>
+                    <select name="product" id="product">
+                        <option value="food_1">Food 1</option>
+                        <option value="food_1_small">Food 1 (small portion)</option>
+                        <option value="food_1_large">Food 1 (large portion)</option>
+                        <option value="food_2">Food 2</option>
+                        <option value="food_2_small">Food 2 (small portion)</option>
+                        <option value="food_2_large">Food 2 (large portion)</option>
+                        <option value="food_3">Food 3</option>
+                        <option value="food_3_small">Food 3 (small portion)</option>
+                        <option value="food_3_large">Food 3 (large portion)</option>
+                        <option value="food_4">Food 4</option>
+                        <option value="food_4_small">Food 4 (small portion)</option>
+                        <option value="food_4_large">Food 4 (large portion)</option>
+                        <option value="food_5">Food 5</option>
+                        <option value="food_5_small">Food 5 (small portion)</option>
+                        <option value="food_5_large">Food 5 (large portion)</option>
+                        <option value="food_6">Food 6</option>
+                        <option value="food_6_small">Food 6 (small portion)</option>
+                        <option value="food_6_large">Food 6 (large portion)</option>
+                        <option value="food_7">Food 7</option>
+                        <option value="food_7_small">Food 7 (small portion)</option>
+                        <option value="food_7_large">Food 7 (large portion)</option>
+                        <option value="food_8">Food 8</option>
+                        <option value="food_8_small">Food 8 (small portion)</option>
+                        <option value="food_8_large">Food 8 (large portion)</option>
+                        <option value="food_9">Food 9</option>
+                        <option value="food_9_small">Food 9 (small portion)</option>
+                        <option value="food_9_large">Food 9 (large portion)</option>
+                        <option value="food_10">Food 10</option>
+                        <option value="food_10small">Food 1 (small portion)0</option>
+                        <option value="food_10_large">Food 1 (large portion)0</option>
+                        <option value="food_11">Food 11</option>
+                        <option value="food_11small">Food 1 (small portion)1</option>
+                        <option value="food_11_large">Food 1 (large portion)1</option>
+                        <option value="food_12">Food 12</option>
+                        <option value="food_12small">Food 1 (small portion)2</option>
+                        <option value="food_12_large">Food 1 (large portion)2</option>
+                        <option value="food_13">Food 13</option>
+                        <option value="food_13small">Food 1 (small portion)3</option>
+                        <option value="food_13_large">Food 1 (large portion)3</option>
+                        <option value="food_14">Food 14</option>
+                        <option value="food_14small">Food 1 (small portion)4</option>
+                        <option value="food_14_large">Food 1 (large portion)4</option>
+                        <option value="food_15">Food 15</option>
+                        <option value="food_15small">Food 1 (small portion)5</option>
+                        <option value="food_15_large">Food 1 (large portion)5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="order_hour">Order Time (Hour)</label>
+                    <input name="order_hour" id="order_hour" type="number" min="0" max="24">
+                </div>
+                <div class="form-group">
+                    <label for="order_minute">Order Time (Minute)</label>
+                    <input name="order_minute" id="order_minute" type="number" min="0" max="59">
+                </div>
+                <div class="form-group">
+                    <label for="order_second">Order Time (Second)</label>
+                    <input name="order_second" id="order_second"type="number" min="0" max="59">
+                </div>
+                <hr>
+                <div class="form-group">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        <div class="item">
+            <h3>This is better one</h3>
+            <form>
+                <div class="form-group">
+                    <label for="fullname">Fullname</label>
+                    <input name="fullname" id="fullname" type="text" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input name="email" id="email" type="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input name="phone" id="phone" type="tel" required>
+                </div>
+                <div class="form-group">
+                    <label for="url">Website (not required)</label>
+                    <input name="url" id="url" type="url">
+                </div>
+                <div class="form-group">
+                    <label for="birth_date">Birth Date</label>
+                    <input name="birth_date" id="birth_date" type="date" required>
+                </div>
+                <hr>
+                <div class="form-group">
+                    <label for="product">Product you wanna order</label>
+                    <input name="product" id="product" list="products" required
+                    pattern="Food 1|Food 2|Food 3|Food 4|Food 5|Food 6|Food 7|Food 8|Food 9|Food 10|Food 11|Food 12|Food 13|Food 14|Food 15|
+                    Food 1 (small portion)|Food 2 (small portion)|Food 3 (small portion)|Food 4 (small portion)|Food 5 (small portion)|Food 6 (small portion)|Food 7 (small portion)|Food 8 (small portion)|Food 9 (small portion)|Food 10 (small portion)|Food 11 (small portion)|Food 12 (small portion)|Food 13 (small portion)|Food 14 (small portion)|Food 15 (small portion)|
+                    Food 1 (large portion)|Food 2 (large portion)|Food 3 (large portion)|Food 4 (large portion)|Food 5 (large portion)|Food 6 (large portion)|Food 7 (large portion)|Food 8 (large portion)|Food 9 (large portion)|Food 10 (large portion)|Food 11 (large portion)|Food 12 (large portion)|Food 13 (large portion)|Food 14 (large portion)|Food 15 (large portion)">
+                    <datalist id="products">
+                        <option data-value="food_1" value="Food 1"></option>
+                        <option data-value="food_1_small" value="Food 1 (small portion)"></option>
+                        <option data-value="food_1_large" value="Food 1 (large portion)"></option>
+                        <option data-value="food_2" value="Food 2"></option>
+                        <option data-value="food_2_small" value="Food 2 (small portion)"></option>
+                        <option data-value="food_2_large" value="Food 2 (large portion)"></option>
+                        <option data-value="food_3" value="Food 3"></option>
+                        <option data-value="food_3_small" value="Food 3 (small portion)"></option>
+                        <option data-value="food_3_large" value="Food 3 (large portion)"></option>
+                        <option data-value="food_4" value="Food 4"></option>
+                        <option data-value="food_4_small" value="Food 4 (small portion)"></option>
+                        <option data-value="food_4_large" value="Food 4 (large portion)"></option>
+                        <option data-value="food_5" value="Food 5"></option>
+                        <option data-value="food_5_small" value="Food 5 (small portion)"></option>
+                        <option data-value="food_5_large" value="Food 5 (large portion)"></option>
+                        <option data-value="food_6" value="Food 6"></option>
+                        <option data-value="food_6_small" value="Food 6 (small portion)"></option>
+                        <option data-value="food_6_large" value="Food 6 (large portion)"></option>
+                        <option data-value="food_7" value="Food 7"></option>
+                        <option data-value="food_7_small" value="Food 7 (small portion)"></option>
+                        <option data-value="food_7_large" value="Food 7 (large portion)"></option>
+                        <option data-value="food_8" value="Food 8"></option>
+                        <option data-value="food_8_small" value="Food 8 (small portion)"></option>
+                        <option data-value="food_8_large" value="Food 8 (large portion)"></option>
+                        <option data-value="food_9" value="Food 9"></option>
+                        <option data-value="food_9_small" value="Food 9 (small portion)"></option>
+                        <option data-value="food_9_large" value="Food 9 (large portion)"></option>
+                        <option data-value="food_10" value="Food 10"></option>
+                        <option data-value="food_10small" value="Food 10 (small portion)"></option>
+                        <option data-value="food_10_large" value="Food 10 (large portion)"></option>
+                        <option data-value="food_11" value="Food 11"></option>
+                        <option data-value="food_11small" value="Food 11 (small portion)"></option>
+                        <option data-value="food_11_large" value="Food 11 (large portion)"></option>
+                        <option data-value="food_12" value="Food 12"></option>
+                        <option data-value="food_12small" value="Food 12 (small portion)"></option>
+                        <option data-value="food_12_large" value="Food 12 (large portion)"></option>
+                        <option data-value="food_13" value="Food 13"></option>
+                        <option data-value="food_13small" value="Food 13 (small portion)"></option>
+                        <option data-value="food_13_large" value="Food 13 (large portion)"></option>
+                        <option data-value="food_14" value="Food 14"></option>
+                        <option data-value="food_14small" value="Food 14 (small portion)"></option>
+                        <option data-value="food_14_large" value="Food 14 (large portion)"></option>
+                        <option data-value="food_15" value="Food 15"></option>
+                        <option data-value="food_15small" value="Food 15 (small portion)"></option>
+                        <option data-value="food_15_large" value="Food 15 (large portion)"></option>
+                    </datalist>
+                </div>
+                <div class="form-group">
+                    <label for="order">Order Time</label>
+                    <input name="order" id="order" type="time" required>
+                </div>
+                <hr>
+                <div class="form-group">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
