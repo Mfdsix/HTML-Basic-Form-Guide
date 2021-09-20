@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <style>
+        .text-primary{
+            color: green;
+        }
+        .text-danger{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <p>It's important to give user calendar input to make them more attracted to fulfill your form.
+        These example below will show you how could you simplify date time inputs with calendar input.
+    </p>
+
+    <h3 class="text-danger">Don't do This</h3>
+    <div>
+        <div>
+            <label for="day">Day</label>
+            <input id="day" type="number" min="1" max="31" placeholder="DD">
+        </div>
+        <div>
+            <label for="month">Month</label>
+            <input id="month" type="number" min="1" max="12" placeholder="MM">
+        </div>
+        <div>
+            <label for="year">Year</label>
+            <input id="year" type="number" min="1700" max="2021" placeholder="YYYY">
+        </div>
+        <div>
+            <label for="hour">Hour</label>
+            <input id="hour" type="number" min="0" max="24" placeholder="HH">
+        </div>
+        <div>
+            <label for="minute">Minute</label>
+            <input id="minute" type="number" min="0" max="59" placeholder="mm">
+        </div>
+    </div>
+
+    <h3 class="text-primary">Do This</h3>
+    <div>
+        <label for="datetime">Date Time</label>
+        <input id="datetime" type="datetime-local">
+    </div>
+
+</body>
+</html>
