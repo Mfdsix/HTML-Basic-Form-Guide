@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Label positioning</title>
+    <style>
+        .text-primary{
+            color: green;
+        }
+        .text-danger{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+<p>First of all, it's okay to put label on the left or above the input field.
+    But it's being problem when you put it below the input field.
+Because, on modern mobile devices, your label will be overflow by virtual keyboard, and make your users don't see the label.</p>
+
+<hr>
+
+<h5 class="text-primary">Do This</h5>
+
+<p>
+    <label for="username">Left of input</label>
+    <input type="text">
+</p>
+
+<div>
+    <label for="username">Above The Input</label>
+    <div>
+        <input type="text">
+    </div>
+</div>
+
+<h5 class="text-danger">Dont do this</h5>
+<div>
+    <div>
+        <input type="text">
+    </div>
+    <label for="">Below The Input</label>
+</div>
+
+</body>
+</html>
